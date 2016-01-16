@@ -17,5 +17,9 @@ module.exports = function() {
 	return account;
 }
 
+<<<<<<< HEAD
 
 ///adfasfsadfasfas
+=======
+// lolllllll
+>>>>>>> origin/master

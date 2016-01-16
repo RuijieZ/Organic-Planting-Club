@@ -3,7 +3,7 @@ var router = express.Router();
 //var jquery = require("jquery");
 var auth = require('../javascripts/Oauth.js')
 
-var userAccount = require("../javascripts/userAccount_exp.js");
+var userAccount = require("../javascripts/userAccount.js");
 var contact = require("../javascripts/contactInfo.js");             //js that handles the contact info posted on our website
 
 router.get('/', function(req, res) {

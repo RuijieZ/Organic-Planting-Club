@@ -1,15 +1,17 @@
 var database = require("../javascripts/database.js");
 var crypto = require("crypto");
+var SHA256 = require("crypto-js/sha256");
 var jwt = require("jwt-simple");
-var key = "121312312412";
-	
-function signIn(userName, password, session, next) {
+
+var privateKey = "hardcoded_key_for_now";
+
+function signIn(userName, password, next) {
 	if(!checkUserName(userName)) {
 		console.log("Invalid Username: " + userName);
-		next(001);
+		next(001, null);
 	} else if(!checkPassword(password)) {
 		console.log("Invalid Password: " + password);
-		next(010);
+		next(010, null);
 	} else {
 		database.query("SELECT password FROM test WHERE username=?", [userName], function (err, rows) {
 			if (!err) {
@@ -21,22 +23,23 @@ function signIn(userName, password, session, next) {
 
 					if (rows[0].password == shasum.digest("hex")) {
 						delete shasum;
-
-                        database.query("update test set session = ? WHERE username=?", [jwt.encode(session, key), userName], function (err, rows) {
-                            if (!err) {
-                                next(null);
-                            } else {
-                                next(401);
-                            }
-                        });
+                        var payload = {
+                            "userName": userName,
+                            "expiry": new Date()
+                        }
+                        var session = {
+                            "userName": userName,
+                            "status": 202
+                        }
+						next(null, jwt.encode(payload, privateKey), session);
 					} else {
 						delete shasum;
-						next(401);
+						next(401, null);
 					}
 				}
 			} else {
 				console.log("Error while performing Query. \n" + err);
-				next(err);
+				next(err, null);
 			}
 		});
 	}

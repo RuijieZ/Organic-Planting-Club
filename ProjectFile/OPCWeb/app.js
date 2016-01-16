@@ -6,7 +6,6 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var session = require("express-session");
 
-//var routes = require('./routes/index_deprecated');
 var routes = require('./routes/index');
 var user = require('./routes/user');
 

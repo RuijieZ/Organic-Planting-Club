@@ -8,7 +8,7 @@ var app = require("../bin/www.js").server;
 
 describe("userAccount function test", function() {
     it("POST /register", function(done) {
-        done();
+        // request(app).post("")
     });
 
     it("POST /login", function(done) {

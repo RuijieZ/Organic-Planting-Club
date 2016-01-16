@@ -1,40 +1,29 @@
 var database = require("../javascripts/database.js");
 var crypto = require("crypto");
 var SHA256 = require("crypto-js/sha256");
-var jwt = require("jwt-simple");
 
-var privateKey = "hardcoded_key_for_now";
 
 function signIn(userName, password, next) {
-	if(!checkUserName(userName)) {
-		console.log("Invalid Username: " + userName);
-		next(001, null);
-	} else if(!checkPassword(password)) {
-		console.log("Invalid Password: " + password);
-		next(010, null);
+	var credErr = new Error("Invalid user credential");
+
+	if(!checkUserName(userName) || !checkPassword(password)) {
+		next(credErr, null);
 	} else {
 		database.query("SELECT password FROM test WHERE username=?", [userName], function (err, rows) {
 			if (!err) {
 				if (rows.length <= 0) {
-					next(401);
+					next(credErr);
 				} else {
 					var shasum = crypto.createHash("sha1");
 					shasum.update(password);
 
 					if (rows[0].password == shasum.digest("hex")) {
 						delete shasum;
-                        var payload = {
-                            "userName": userName,
-                            "expiry": new Date()
-                        }
-                        var session = {
-                            "userName": userName,
-                            "status": 202
-                        }
-						next(null, jwt.encode(payload, privateKey), session);
+                        
+						next(null, userName);
 					} else {
 						delete shasum;
-						next(401, null);
+						next(credErr, null);
 					}
 				}
 			} else {

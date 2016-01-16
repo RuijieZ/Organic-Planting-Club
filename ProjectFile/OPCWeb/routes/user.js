@@ -33,7 +33,7 @@ router.route("/resetPassword")
                 "message": "两次输入密码不符，请重新输入"
             });
         } else {
-            userAccount.resetPassword(req.session.user, password, newPassword, function(err) {
+            userAccount.resetPassword(password, newPassword, function(err) {
                 if(err) {
                     res.render("resetPassword", {
                         "title": "Reset Password",

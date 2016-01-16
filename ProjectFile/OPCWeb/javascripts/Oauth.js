@@ -1,44 +1,55 @@
 var database = require("../javascripts/database.js");
+var userAccount = require("../javascripts/userAccount.js");
 
 var privateKey = "hardcoded_key_for_now";
 var jwt = require("jwt-simple");
 var util = require("util");
 //var SHA256 = require("crypto-js/sha256");
 //var compare = require("deep-equal");
+var jwt = require("jwt-simple");
 
 function validate(req, res, next) {
-    try {
+	if(!req.cookies.OPCWeb_token) {
+		req.validation = false;
+		next();
+		return;
+	}
+	
+    try {	
         //console.log(req.cookies.OPCWeb_token);
-        var session = jwt.decode(req.cookies.OPCWeb_token, privateKey);
+
+        var session = jwt.decode(req.cookies.OPCWeb_token.token, privateKey);
         //console.log("====" + util.inspect(req.cookies.OPCWeb_token));
 
         //console.log("session = " + util.inspect(session));
         //console.log(session.access_token);
 
-        res.cookie("OPCWeb_session", {
-            "userName": session.userName,
-            "status": 202
-        });
+		// TODO: Extra token field checking
+		
         console.log(req.cookies);
+		req.validation = true;
+		next();
     } catch (err) {
         console.log(err);
-        res.cookie("OPCWeb_session", {
-            "userName": null,
-            "status": 401
-        });
+		req.validation = false;
+        next(err);
     }
-    next();
+	return;
 }
 
-function authenticate(req, res, next) {
-    userAccount.signIn(userName, password, function(err, token) {
+function authenticate(userName, password, next) {
+    userAccount.signIn(userName, password, function(err, userName) {
         if(!err) {
-            console.log("Authorization Success. ");
-            res.cookie("OPCWeb_token", token);
-            res.redirect("/profile");
+            console.log("Authorization Success.");
+			var payload = {
+				"userName": userName,
+				"expiry": new Date()
+			};
+			var token = jwt.encode(payload, privateKey);
+			next(null, token, userName);
         } else {
             console.log("Authorization Failure.");
-            res.redirect("/login");
+            next(err, null, null);
         }
     });
 }

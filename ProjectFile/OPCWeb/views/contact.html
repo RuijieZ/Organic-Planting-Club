@@ -1,0 +1,36 @@
+<% include header.html %>
+<!--top nav end here-->
+<!--banner start here-->
+<div class="banner-two">
+</div>
+<!--banner end here-->
+<!--contact start here-->
+<div class="contact">
+		<div class="container">
+			<div class="contact-top">
+				<h3>联系我们</h3>
+				<p> 如果您对我们的俱乐部有任何的意见或者建议，请用下面的留言板联系我们</p>
+			</div>
+			<div class="map">
+				<h4>我们的地址</h4>
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2896.0169619299295!2d-80.54565988496398!3d43.46024307290537!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882bf41e2206c07b%3A0x119c3440cde71050!2s54+McDougall+Rd%2C+Waterloo%2C+ON+N2L+2W5!5e0!3m2!1sen!2sca!4v1444512886392" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+			</div>
+			<div class="contact-infom">
+				<h4>留言板</h4>
+				<p>请留下您的姓名，电子邮件和留言，我们会在最短的时间内给你回复</p>
+			</div>	
+			<div class="contact-form">
+				<form method="post">
+					<input type="text" id="contactName" name="contactName" value="姓名" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '姓名';}" required="">
+					<input type="email" id="contactEmail" name="contactEmail" value="电子邮件" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '电子邮件';}" required="">
+					<input type="text" id="contactPhone" name="contactPhone" value="电话"  onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '电话（非必需）';}" >
+					<textarea type="text" id="contactMessage" name="contactMessage" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Message...';}" required="">留言...</textarea>
+					<input type="submit" value="提交" >
+				</form>
+			</div>
+			
+		</div>
+	</div>
+<!--contact end here-->
+<!--footer start here-->
+<% include footer.html %>

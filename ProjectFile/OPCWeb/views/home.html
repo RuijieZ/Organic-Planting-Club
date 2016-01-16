@@ -1,0 +1,26 @@
+<% include header.html %>
+<head>
+    <link rel="stylesheet" type="text/css" href=../public/css/Grid.css>
+</head>
+<div class="welcome">
+    <h1>Welcome <%= user %> ！！</h1>
+</div>
+<div class = "row">
+    <div class="span-1-of-2 col">
+        <h2>新任务</h2>
+    </div>
+    <div class="span-1-of-2 col">
+        <h2>进行中任务</h2>
+    </div>
+</div>    
+    
+    
+    
+    
+<a class="btn" href="/logout">Logout</a>
+<a class="btn" href="/profile">Profile</a>
+<a class="btn" href="/resetPassword">Reset Password</a>
+<!--script src="/javascripts/jquery.min.js"></script-->
+<!--script src="/javascripts/bootstrap.min.js"></script-->
+
+<% include footer.html %>

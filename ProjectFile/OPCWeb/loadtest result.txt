@@ -1,0 +1,288 @@
+> loadtest -n 100 -c 100 -r -p test.js -T application/json http://localhost:3000/login
+[Thu Dec 17 2015 09:19:56 GMT-0500 (Eastern Standard Time)] INFO Requests: 0 (0%), requests per second: 0, mean latency: 0 ms
+[Thu Dec 17 2015 09:20:00 GMT-0500 (Eastern Standard Time)] INFO
+[Thu Dec 17 2015 09:20:00 GMT-0500 (Eastern Standard Time)] INFO Target URL:          http://localhost:3000/login
+[Thu Dec 17 2015 09:20:00 GMT-0500 (Eastern Standard Time)] INFO Max requests:        100
+[Thu Dec 17 2015 09:20:00 GMT-0500 (Eastern Standard Time)] INFO Concurrency level:   100
+[Thu Dec 17 2015 09:20:00 GMT-0500 (Eastern Standard Time)] INFO Agent:               none
+[Thu Dec 17 2015 09:20:00 GMT-0500 (Eastern Standard Time)] INFO
+[Thu Dec 17 2015 09:20:00 GMT-0500 (Eastern Standard Time)] INFO Completed requests:  100
+[Thu Dec 17 2015 09:20:00 GMT-0500 (Eastern Standard Time)] INFO Total errors:        100
+[Thu Dec 17 2015 09:20:00 GMT-0500 (Eastern Standard Time)] INFO Total time:          3.487551254 s
+[Thu Dec 17 2015 09:20:00 GMT-0500 (Eastern Standard Time)] INFO Requests per second: 29
+[Thu Dec 17 2015 09:20:00 GMT-0500 (Eastern Standard Time)] INFO Total time:          3.487551254 s
+[Thu Dec 17 2015 09:20:00 GMT-0500 (Eastern Standard Time)] INFO
+[Thu Dec 17 2015 09:20:00 GMT-0500 (Eastern Standard Time)] INFO Percentage of the requests served within a certain time
+[Thu Dec 17 2015 09:20:00 GMT-0500 (Eastern Standard Time)] INFO   50%      3016 ms
+[Thu Dec 17 2015 09:20:00 GMT-0500 (Eastern Standard Time)] INFO   90%      3346 ms
+[Thu Dec 17 2015 09:20:00 GMT-0500 (Eastern Standard Time)] INFO   95%      3392 ms
+[Thu Dec 17 2015 09:20:00 GMT-0500 (Eastern Standard Time)] INFO   99%      3427 ms
+[Thu Dec 17 2015 09:20:00 GMT-0500 (Eastern Standard Time)] INFO  100%      3427 ms (longest request)
+[Thu Dec 17 2015 09:20:00 GMT-0500 (Eastern Standard Time)] INFO
+[Thu Dec 17 2015 09:20:00 GMT-0500 (Eastern Standard Time)] INFO  100%      3427 ms (longest request)
+[Thu Dec 17 2015 09:20:00 GMT-0500 (Eastern Standard Time)] INFO
+[Thu Dec 17 2015 09:20:00 GMT-0500 (Eastern Standard Time)] INFO   302:   100 errors
+
+> loadtest -n 100 -c 100 -r -p test.js -T application/json http://localhost:3000/login
+[Thu Dec 17 2015 09:21:36 GMT-0500 (Eastern Standard Time)] INFO Requests: 0 (0%), requests per second: 0, mean latency: 0 ms
+[Thu Dec 17 2015 09:21:37 GMT-0500 (Eastern Standard Time)] INFO
+[Thu Dec 17 2015 09:21:37 GMT-0500 (Eastern Standard Time)] INFO Target URL:          http://localhost:3000/login
+[Thu Dec 17 2015 09:21:37 GMT-0500 (Eastern Standard Time)] INFO Max requests:        100
+[Thu Dec 17 2015 09:21:37 GMT-0500 (Eastern Standard Time)] INFO Concurrency level:   100
+[Thu Dec 17 2015 09:21:37 GMT-0500 (Eastern Standard Time)] INFO Agent:               none
+[Thu Dec 17 2015 09:21:37 GMT-0500 (Eastern Standard Time)] INFO
+[Thu Dec 17 2015 09:21:37 GMT-0500 (Eastern Standard Time)] INFO Completed requests:  100
+[Thu Dec 17 2015 09:21:37 GMT-0500 (Eastern Standard Time)] INFO Total errors:        100
+[Thu Dec 17 2015 09:21:37 GMT-0500 (Eastern Standard Time)] INFO Total time:          1.105120965 s
+[Thu Dec 17 2015 09:21:37 GMT-0500 (Eastern Standard Time)] INFO Requests per second: 90
+[Thu Dec 17 2015 09:21:37 GMT-0500 (Eastern Standard Time)] INFO Total time:          1.105120965 s
+[Thu Dec 17 2015 09:21:37 GMT-0500 (Eastern Standard Time)] INFO
+[Thu Dec 17 2015 09:21:37 GMT-0500 (Eastern Standard Time)] INFO Percentage of the requests served within a certain time
+[Thu Dec 17 2015 09:21:37 GMT-0500 (Eastern Standard Time)] INFO   50%      645 ms
+[Thu Dec 17 2015 09:21:37 GMT-0500 (Eastern Standard Time)] INFO   90%      987 ms
+[Thu Dec 17 2015 09:21:37 GMT-0500 (Eastern Standard Time)] INFO   95%      1013 ms
+[Thu Dec 17 2015 09:21:37 GMT-0500 (Eastern Standard Time)] INFO   99%      1044 ms
+[Thu Dec 17 2015 09:21:37 GMT-0500 (Eastern Standard Time)] INFO  100%      1044 ms (longest request)
+[Thu Dec 17 2015 09:21:37 GMT-0500 (Eastern Standard Time)] INFO
+[Thu Dec 17 2015 09:21:37 GMT-0500 (Eastern Standard Time)] INFO  100%      1044 ms (longest request)
+[Thu Dec 17 2015 09:21:37 GMT-0500 (Eastern Standard Time)] INFO
+[Thu Dec 17 2015 09:21:37 GMT-0500 (Eastern Standard Time)] INFO   302:   100 errors
+
+> loadtest -n 500 -c 500 -r -p test.js -T application/json http://localhost:3000/login
+[Thu Dec 17 2015 09:22:56 GMT-0500 (Eastern Standard Time)] INFO Requests: 0 (0%), requests per second: 0, mean latency: 0 ms
+[Thu Dec 17 2015 09:23:01 GMT-0500 (Eastern Standard Time)] INFO Requests: 168 (34%), requests per second: 34, mean latency: 4380 ms
+[Thu Dec 17 2015 09:23:01 GMT-0500 (Eastern Standard Time)] INFO Errors: 168, accumulated errors: 168, 100% of total requests
+[Thu Dec 17 2015 09:23:04 GMT-0500 (Eastern Standard Time)] INFO
+[Thu Dec 17 2015 09:23:04 GMT-0500 (Eastern Standard Time)] INFO Target URL:          http://localhost:3000/login
+[Thu Dec 17 2015 09:23:04 GMT-0500 (Eastern Standard Time)] INFO Max requests:        500
+[Thu Dec 17 2015 09:23:04 GMT-0500 (Eastern Standard Time)] INFO Concurrency level:   500
+[Thu Dec 17 2015 09:23:04 GMT-0500 (Eastern Standard Time)] INFO Agent:               none
+[Thu Dec 17 2015 09:23:04 GMT-0500 (Eastern Standard Time)] INFO
+[Thu Dec 17 2015 09:23:04 GMT-0500 (Eastern Standard Time)] INFO Completed requests:  500
+[Thu Dec 17 2015 09:23:04 GMT-0500 (Eastern Standard Time)] INFO Total errors:        500
+[Thu Dec 17 2015 09:23:04 GMT-0500 (Eastern Standard Time)] INFO Total time:          8.34617153 s
+[Thu Dec 17 2015 09:23:04 GMT-0500 (Eastern Standard Time)] INFO Requests per second: 60
+[Thu Dec 17 2015 09:23:04 GMT-0500 (Eastern Standard Time)] INFO Total time:          8.34617153 s
+[Thu Dec 17 2015 09:23:04 GMT-0500 (Eastern Standard Time)] INFO
+[Thu Dec 17 2015 09:23:04 GMT-0500 (Eastern Standard Time)] INFO Percentage of the requests served within a certain time
+[Thu Dec 17 2015 09:23:04 GMT-0500 (Eastern Standard Time)] INFO   50%      5851 ms
+[Thu Dec 17 2015 09:23:04 GMT-0500 (Eastern Standard Time)] INFO   90%      7701 ms
+[Thu Dec 17 2015 09:23:04 GMT-0500 (Eastern Standard Time)] INFO   95%      7926 ms
+[Thu Dec 17 2015 09:23:04 GMT-0500 (Eastern Standard Time)] INFO   99%      8108 ms
+[Thu Dec 17 2015 09:23:04 GMT-0500 (Eastern Standard Time)] INFO  100%      8141 ms (longest request)
+[Thu Dec 17 2015 09:23:04 GMT-0500 (Eastern Standard Time)] INFO
+[Thu Dec 17 2015 09:23:04 GMT-0500 (Eastern Standard Time)] INFO  100%      8141 ms (longest request)
+[Thu Dec 17 2015 09:23:04 GMT-0500 (Eastern Standard Time)] INFO
+[Thu Dec 17 2015 09:23:04 GMT-0500 (Eastern Standard Time)] INFO   302:   500 errors
+
+> loadtest -n 500 -c 500 -r -p test.js -T application/json http://localhost:3000/login
+[Thu Dec 17 2015 09:24:13 GMT-0500 (Eastern Standard Time)] INFO Requests: 0 (0%), requests per second: 0, mean latency: 0 ms
+[Thu Dec 17 2015 09:24:18 GMT-0500 (Eastern Standard Time)] INFO
+[Thu Dec 17 2015 09:24:18 GMT-0500 (Eastern Standard Time)] INFO Target URL:          http://localhost:3000/login
+[Thu Dec 17 2015 09:24:18 GMT-0500 (Eastern Standard Time)] INFO Max requests:        500
+[Thu Dec 17 2015 09:24:18 GMT-0500 (Eastern Standard Time)] INFO Concurrency level:   500
+[Thu Dec 17 2015 09:24:18 GMT-0500 (Eastern Standard Time)] INFO Agent:               none
+[Thu Dec 17 2015 09:24:18 GMT-0500 (Eastern Standard Time)] INFO
+[Thu Dec 17 2015 09:24:18 GMT-0500 (Eastern Standard Time)] INFO Completed requests:  500
+[Thu Dec 17 2015 09:24:18 GMT-0500 (Eastern Standard Time)] INFO Total errors:        500
+[Thu Dec 17 2015 09:24:18 GMT-0500 (Eastern Standard Time)] INFO Total time:          5.117562321 s
+[Thu Dec 17 2015 09:24:18 GMT-0500 (Eastern Standard Time)] INFO Requests per second: 98
+[Thu Dec 17 2015 09:24:18 GMT-0500 (Eastern Standard Time)] INFO Total time:          5.117562321 s
+[Thu Dec 17 2015 09:24:18 GMT-0500 (Eastern Standard Time)] INFO
+[Thu Dec 17 2015 09:24:18 GMT-0500 (Eastern Standard Time)] INFO Percentage of the requests served within a certain time
+[Thu Dec 17 2015 09:24:18 GMT-0500 (Eastern Standard Time)] INFO   50%      2646 ms
+[Thu Dec 17 2015 09:24:18 GMT-0500 (Eastern Standard Time)] INFO   90%      4519 ms
+[Thu Dec 17 2015 09:24:18 GMT-0500 (Eastern Standard Time)] INFO   95%      4733 ms
+[Thu Dec 17 2015 09:24:18 GMT-0500 (Eastern Standard Time)] INFO   99%      4896 ms
+[Thu Dec 17 2015 09:24:18 GMT-0500 (Eastern Standard Time)] INFO  100%      4931 ms (longest request)
+[Thu Dec 17 2015 09:24:18 GMT-0500 (Eastern Standard Time)] INFO
+[Thu Dec 17 2015 09:24:18 GMT-0500 (Eastern Standard Time)] INFO  100%      4931 ms (longest request)
+[Thu Dec 17 2015 09:24:18 GMT-0500 (Eastern Standard Time)] INFO
+[Thu Dec 17 2015 09:24:18 GMT-0500 (Eastern Standard Time)] INFO   302:   500 errors
+
+> loadtest -n 1000 -c 1000 -r -p test.js -T application/json http://localhost:3000/login
+[Thu Dec 17 2015 09:24:56 GMT-0500 (Eastern Standard Time)] INFO Requests: 0 (0%), requests per second: 0, mean latency: 0 ms
+[Thu Dec 17 2015 09:25:01 GMT-0500 (Eastern Standard Time)] INFO Requests: 0 (0%), requests per second: 0, mean latency: 0 ms
+[Thu Dec 17 2015 09:25:06 GMT-0500 (Eastern Standard Time)] INFO Requests: 317 (32%), requests per second: 63, mean latency: 8900 ms
+[Thu Dec 17 2015 09:25:06 GMT-0500 (Eastern Standard Time)] INFO Errors: 317, accumulated errors: 317, 100% of total requests
+[Thu Dec 17 2015 09:25:11 GMT-0500 (Eastern Standard Time)] INFO Requests: 874 (87%), requests per second: 111, mean latency: 12660 ms
+[Thu Dec 17 2015 09:25:11 GMT-0500 (Eastern Standard Time)] INFO Errors: 557, accumulated errors: 874, 100% of total requests
+[Thu Dec 17 2015 09:25:13 GMT-0500 (Eastern Standard Time)] INFO
+[Thu Dec 17 2015 09:25:13 GMT-0500 (Eastern Standard Time)] INFO Target URL:          http://localhost:3000/login
+[Thu Dec 17 2015 09:25:13 GMT-0500 (Eastern Standard Time)] INFO Max requests:        1000
+[Thu Dec 17 2015 09:25:13 GMT-0500 (Eastern Standard Time)] INFO Concurrency level:   1000
+[Thu Dec 17 2015 09:25:13 GMT-0500 (Eastern Standard Time)] INFO Agent:               none
+[Thu Dec 17 2015 09:25:13 GMT-0500 (Eastern Standard Time)] INFO
+[Thu Dec 17 2015 09:25:13 GMT-0500 (Eastern Standard Time)] INFO Completed requests:  1000
+[Thu Dec 17 2015 09:25:13 GMT-0500 (Eastern Standard Time)] INFO Total errors:        1000
+[Thu Dec 17 2015 09:25:13 GMT-0500 (Eastern Standard Time)] INFO Total time:          16.544244282 s
+[Thu Dec 17 2015 09:25:13 GMT-0500 (Eastern Standard Time)] INFO Requests per second: 60
+[Thu Dec 17 2015 09:25:13 GMT-0500 (Eastern Standard Time)] INFO Total time:          16.544244282 s
+[Thu Dec 17 2015 09:25:13 GMT-0500 (Eastern Standard Time)] INFO
+[Thu Dec 17 2015 09:25:13 GMT-0500 (Eastern Standard Time)] INFO Percentage of the requests served within a certain time
+[Thu Dec 17 2015 09:25:13 GMT-0500 (Eastern Standard Time)] INFO   50%      11852 ms
+[Thu Dec 17 2015 09:25:13 GMT-0500 (Eastern Standard Time)] INFO   90%      15281 ms
+[Thu Dec 17 2015 09:25:13 GMT-0500 (Eastern Standard Time)] INFO   95%      15732 ms
+[Thu Dec 17 2015 09:25:13 GMT-0500 (Eastern Standard Time)] INFO   99%      16071 ms
+[Thu Dec 17 2015 09:25:13 GMT-0500 (Eastern Standard Time)] INFO  100%      16150 ms (longest request)
+[Thu Dec 17 2015 09:25:13 GMT-0500 (Eastern Standard Time)] INFO
+[Thu Dec 17 2015 09:25:13 GMT-0500 (Eastern Standard Time)] INFO  100%      16150 ms (longest request)
+[Thu Dec 17 2015 09:25:13 GMT-0500 (Eastern Standard Time)] INFO
+[Thu Dec 17 2015 09:25:13 GMT-0500 (Eastern Standard Time)] INFO   302:   1000 errors
+
+> loadtest -n 1000 -c 1000 -r -p test.js -T application/json http://localhost:3000/login
+[Thu Dec 17 2015 09:25:59 GMT-0500 (Eastern Standard Time)] INFO Requests: 0 (0%), requests per second: 0, mean latency: 0 ms
+[Thu Dec 17 2015 09:26:04 GMT-0500 (Eastern Standard Time)] INFO Requests: 503 (50%), requests per second: 101, mean latency: 3190 ms
+[Thu Dec 17 2015 09:26:04 GMT-0500 (Eastern Standard Time)] INFO Errors: 503, accumulated errors: 503, 100% of total requests
+[Thu Dec 17 2015 09:26:08 GMT-0500 (Eastern Standard Time)] INFO
+[Thu Dec 17 2015 09:26:08 GMT-0500 (Eastern Standard Time)] INFO Target URL:          http://localhost:3000/login
+[Thu Dec 17 2015 09:26:08 GMT-0500 (Eastern Standard Time)] INFO Max requests:        1000
+[Thu Dec 17 2015 09:26:08 GMT-0500 (Eastern Standard Time)] INFO Concurrency level:   1000
+[Thu Dec 17 2015 09:26:08 GMT-0500 (Eastern Standard Time)] INFO Agent:               none
+[Thu Dec 17 2015 09:26:08 GMT-0500 (Eastern Standard Time)] INFO
+[Thu Dec 17 2015 09:26:08 GMT-0500 (Eastern Standard Time)] INFO Completed requests:  1000
+[Thu Dec 17 2015 09:26:08 GMT-0500 (Eastern Standard Time)] INFO Total errors:        1000
+[Thu Dec 17 2015 09:26:08 GMT-0500 (Eastern Standard Time)] INFO Total time:          9.141964721 s
+[Thu Dec 17 2015 09:26:08 GMT-0500 (Eastern Standard Time)] INFO Requests per second: 109
+[Thu Dec 17 2015 09:26:08 GMT-0500 (Eastern Standard Time)] INFO Total time:          9.141964721 s
+[Thu Dec 17 2015 09:26:08 GMT-0500 (Eastern Standard Time)] INFO
+[Thu Dec 17 2015 09:26:08 GMT-0500 (Eastern Standard Time)] INFO Percentage of the requests served within a certain time
+[Thu Dec 17 2015 09:26:08 GMT-0500 (Eastern Standard Time)] INFO   50%      5144 ms
+[Thu Dec 17 2015 09:26:08 GMT-0500 (Eastern Standard Time)] INFO   90%      8098 ms
+[Thu Dec 17 2015 09:26:08 GMT-0500 (Eastern Standard Time)] INFO   95%      8457 ms
+[Thu Dec 17 2015 09:26:08 GMT-0500 (Eastern Standard Time)] INFO   99%      8737 ms
+[Thu Dec 17 2015 09:26:08 GMT-0500 (Eastern Standard Time)] INFO  100%      8801 ms (longest request)
+[Thu Dec 17 2015 09:26:08 GMT-0500 (Eastern Standard Time)] INFO
+[Thu Dec 17 2015 09:26:08 GMT-0500 (Eastern Standard Time)] INFO  100%      8801 ms (longest request)
+[Thu Dec 17 2015 09:26:08 GMT-0500 (Eastern Standard Time)] INFO
+[Thu Dec 17 2015 09:26:08 GMT-0500 (Eastern Standard Time)] INFO   302:   1000 errors
+
+> loadtest -n 5000 -c 5000 -r -p test.js -T application/json http://localhost:3000/login
+[Thu Dec 17 2015 09:28:48 GMT-0500 (Eastern Standard Time)] INFO
+[Thu Dec 17 2015 09:28:48 GMT-0500 (Eastern Standard Time)] INFO Target URL:          http://localhost:3000/login
+[Thu Dec 17 2015 09:28:48 GMT-0500 (Eastern Standard Time)] INFO Max requests:        5000
+[Thu Dec 17 2015 09:28:48 GMT-0500 (Eastern Standard Time)] INFO Concurrency level:   5000
+[Thu Dec 17 2015 09:28:48 GMT-0500 (Eastern Standard Time)] INFO Agent:               none
+[Thu Dec 17 2015 09:28:48 GMT-0500 (Eastern Standard Time)] INFO
+[Thu Dec 17 2015 09:28:48 GMT-0500 (Eastern Standard Time)] INFO Completed requests:  5000
+[Thu Dec 17 2015 09:28:48 GMT-0500 (Eastern Standard Time)] INFO Total errors:        5000
+[Thu Dec 17 2015 09:28:48 GMT-0500 (Eastern Standard Time)] INFO Total time:          79.40405384799999 s
+[Thu Dec 17 2015 09:28:48 GMT-0500 (Eastern Standard Time)] INFO Requests per second: 63
+[Thu Dec 17 2015 09:28:48 GMT-0500 (Eastern Standard Time)] INFO Total time:          79.40405384799999 s
+[Thu Dec 17 2015 09:28:48 GMT-0500 (Eastern Standard Time)] INFO
+[Thu Dec 17 2015 09:28:48 GMT-0500 (Eastern Standard Time)] INFO Percentage of the requests served within a certain time
+[Thu Dec 17 2015 09:28:48 GMT-0500 (Eastern Standard Time)] INFO   50%      56404 ms
+[Thu Dec 17 2015 09:28:48 GMT-0500 (Eastern Standard Time)] INFO   90%      73576 ms
+[Thu Dec 17 2015 09:28:48 GMT-0500 (Eastern Standard Time)] INFO   95%      75796 ms
+[Thu Dec 17 2015 09:28:48 GMT-0500 (Eastern Standard Time)] INFO   99%      77501 ms
+[Thu Dec 17 2015 09:28:48 GMT-0500 (Eastern Standard Time)] INFO  100%      77917 ms (longest request)
+[Thu Dec 17 2015 09:28:48 GMT-0500 (Eastern Standard Time)] INFO
+[Thu Dec 17 2015 09:28:48 GMT-0500 (Eastern Standard Time)] INFO  100%      77917 ms (longest request)
+[Thu Dec 17 2015 09:28:48 GMT-0500 (Eastern Standard Time)] INFO
+[Thu Dec 17 2015 09:28:48 GMT-0500 (Eastern Standard Time)] INFO   302:   5000 errors
+
+> loadtest -n 5000 -c 5000 -r -p test.js -T application/json http://localhost:3000/login
+[Thu Dec 17 2015 09:30:24 GMT-0500 (Eastern Standard Time)] INFO Target URL:          http://localhost:3000/login
+[Thu Dec 17 2015 09:30:24 GMT-0500 (Eastern Standard Time)] INFO Max requests:        5000
+[Thu Dec 17 2015 09:30:24 GMT-0500 (Eastern Standard Time)] INFO Concurrency level:   5000
+[Thu Dec 17 2015 09:30:24 GMT-0500 (Eastern Standard Time)] INFO Agent:               none
+[Thu Dec 17 2015 09:30:24 GMT-0500 (Eastern Standard Time)] INFO
+[Thu Dec 17 2015 09:30:24 GMT-0500 (Eastern Standard Time)] INFO Completed requests:  5000
+[Thu Dec 17 2015 09:30:24 GMT-0500 (Eastern Standard Time)] INFO Total errors:        5000
+[Thu Dec 17 2015 09:30:24 GMT-0500 (Eastern Standard Time)] INFO Total time:          43.613800686000005 s
+[Thu Dec 17 2015 09:30:24 GMT-0500 (Eastern Standard Time)] INFO Requests per second: 115
+[Thu Dec 17 2015 09:30:24 GMT-0500 (Eastern Standard Time)] INFO Total time:          43.613800686000005 s
+[Thu Dec 17 2015 09:30:24 GMT-0500 (Eastern Standard Time)] INFO
+[Thu Dec 17 2015 09:30:24 GMT-0500 (Eastern Standard Time)] INFO Percentage of the requests served within a certain time
+[Thu Dec 17 2015 09:30:24 GMT-0500 (Eastern Standard Time)] INFO   50%      23272 ms
+[Thu Dec 17 2015 09:30:24 GMT-0500 (Eastern Standard Time)] INFO   90%      38372 ms
+[Thu Dec 17 2015 09:30:24 GMT-0500 (Eastern Standard Time)] INFO   95%      40316 ms
+[Thu Dec 17 2015 09:30:24 GMT-0500 (Eastern Standard Time)] INFO   99%      41802 ms
+[Thu Dec 17 2015 09:30:24 GMT-0500 (Eastern Standard Time)] INFO  100%      42163 ms (longest request)
+[Thu Dec 17 2015 09:30:24 GMT-0500 (Eastern Standard Time)] INFO
+[Thu Dec 17 2015 09:30:24 GMT-0500 (Eastern Standard Time)] INFO  100%      42163 ms (longest request)
+[Thu Dec 17 2015 09:30:24 GMT-0500 (Eastern Standard Time)] INFO
+[Thu Dec 17 2015 09:30:24 GMT-0500 (Eastern Standard Time)] INFO   302:   5000 errors
+
+> loadtest -n 10000 -c 10000 -r -p test.js -T application/json http://localhost:3000/login
+[Thu Dec 17 2015 09:36:02 GMT-0500 (Eastern Standard Time)] INFO Target URL:          http://localhost:3000/login
+[Thu Dec 17 2015 09:36:02 GMT-0500 (Eastern Standard Time)] INFO Max requests:        10000
+[Thu Dec 17 2015 09:36:02 GMT-0500 (Eastern Standard Time)] INFO Concurrency level:   10000
+[Thu Dec 17 2015 09:36:02 GMT-0500 (Eastern Standard Time)] INFO Agent:               none
+[Thu Dec 17 2015 09:36:02 GMT-0500 (Eastern Standard Time)] INFO
+[Thu Dec 17 2015 09:36:02 GMT-0500 (Eastern Standard Time)] INFO Completed requests:  10000
+[Thu Dec 17 2015 09:36:02 GMT-0500 (Eastern Standard Time)] INFO Total errors:        10000
+[Thu Dec 17 2015 09:36:02 GMT-0500 (Eastern Standard Time)] INFO Total time:          131.043603864 s
+[Thu Dec 17 2015 09:36:02 GMT-0500 (Eastern Standard Time)] INFO Requests per second: 76
+[Thu Dec 17 2015 09:36:02 GMT-0500 (Eastern Standard Time)] INFO Total time:          131.043603864 s
+[Thu Dec 17 2015 09:36:02 GMT-0500 (Eastern Standard Time)] INFO
+[Thu Dec 17 2015 09:36:02 GMT-0500 (Eastern Standard Time)] INFO Percentage of the requests served within a certain time
+[Thu Dec 17 2015 09:36:02 GMT-0500 (Eastern Standard Time)] INFO   50%      113295 ms
+[Thu Dec 17 2015 09:36:02 GMT-0500 (Eastern Standard Time)] INFO   90%      127834 ms
+[Thu Dec 17 2015 09:36:02 GMT-0500 (Eastern Standard Time)] INFO   95%      128002 ms
+[Thu Dec 17 2015 09:36:02 GMT-0500 (Eastern Standard Time)] INFO   99%      128149 ms
+[Thu Dec 17 2015 09:36:02 GMT-0500 (Eastern Standard Time)] INFO  100%      128180 ms (longest request)
+[Thu Dec 17 2015 09:36:02 GMT-0500 (Eastern Standard Time)] INFO
+[Thu Dec 17 2015 09:36:02 GMT-0500 (Eastern Standard Time)] INFO  100%      128180 ms (longest request)
+[Thu Dec 17 2015 09:36:02 GMT-0500 (Eastern Standard Time)] INFO
+[Thu Dec 17 2015 09:36:02 GMT-0500 (Eastern Standard Time)] INFO   302:   6478 errors
+[Thu Dec 17 2015 09:36:02 GMT-0500 (Eastern Standard Time)] INFO    -1:   3522 errors
+
+> loadtest -n 10000 -c 10000 -r -p test.js -T application/json http://localhost:3000/login
+[Thu Dec 17 2015 09:36:30 GMT-0500 (Eastern Standard Time)] INFO Requests: 0 (0%), requests per second: 0, mean latency: 0 ms
+[Thu Dec 17 2015 09:36:35 GMT-0500 (Eastern Standard Time)] INFO Requests: 1 (0%), requests per second: 0, mean latency: 5690 ms
+[Thu Dec 17 2015 09:36:35 GMT-0500 (Eastern Standard Time)] INFO Errors: 1, accumulated errors: 1, 100% of total requests
+[Thu Dec 17 2015 09:36:40 GMT-0500 (Eastern Standard Time)] INFO Requests: 435 (4%), requests per second: 87, mean latency: 10970 ms
+[Thu Dec 17 2015 09:36:40 GMT-0500 (Eastern Standard Time)] INFO Errors: 434, accumulated errors: 435, 100% of total requests
+[Thu Dec 17 2015 09:36:45 GMT-0500 (Eastern Standard Time)] INFO Requests: 1069 (11%), requests per second: 127, mean latency: 15030 ms
+[Thu Dec 17 2015 09:36:45 GMT-0500 (Eastern Standard Time)] INFO Errors: 634, accumulated errors: 1069, 100% of total requests
+[Thu Dec 17 2015 09:36:50 GMT-0500 (Eastern Standard Time)] INFO Requests: 1652 (17%), requests per second: 117, mean latency: 19840 ms
+[Thu Dec 17 2015 09:36:50 GMT-0500 (Eastern Standard Time)] INFO Errors: 583, accumulated errors: 1652, 100% of total requests
+[Thu Dec 17 2015 09:36:55 GMT-0500 (Eastern Standard Time)] INFO Requests: 2270 (23%), requests per second: 124, mean latency: 24640 ms
+[Thu Dec 17 2015 09:36:55 GMT-0500 (Eastern Standard Time)] INFO Errors: 618, accumulated errors: 2270, 100% of total requests
+[Thu Dec 17 2015 09:37:00 GMT-0500 (Eastern Standard Time)] INFO Requests: 2902 (29%), requests per second: 126, mean latency: 29420 ms
+[Thu Dec 17 2015 09:37:00 GMT-0500 (Eastern Standard Time)] INFO Errors: 632, accumulated errors: 2902, 100% of total requests
+[Thu Dec 17 2015 09:37:05 GMT-0500 (Eastern Standard Time)] INFO Requests: 3504 (35%), requests per second: 120, mean latency: 34260 ms
+[Thu Dec 17 2015 09:37:05 GMT-0500 (Eastern Standard Time)] INFO Errors: 602, accumulated errors: 3504, 100% of total requests
+[Thu Dec 17 2015 09:37:10 GMT-0500 (Eastern Standard Time)] INFO Requests: 4141 (41%), requests per second: 127, mean latency: 39160 ms
+[Thu Dec 17 2015 09:37:10 GMT-0500 (Eastern Standard Time)] INFO Errors: 637, accumulated errors: 4141, 100% of total requests
+[Thu Dec 17 2015 09:37:15 GMT-0500 (Eastern Standard Time)] INFO Requests: 4795 (48%), requests per second: 131, mean latency: 43950 ms
+[Thu Dec 17 2015 09:37:15 GMT-0500 (Eastern Standard Time)] INFO Errors: 654, accumulated errors: 4795, 100% of total requests
+[Thu Dec 17 2015 09:37:20 GMT-0500 (Eastern Standard Time)] INFO Requests: 5444 (54%), requests per second: 130, mean latency: 48790 ms
+[Thu Dec 17 2015 09:37:20 GMT-0500 (Eastern Standard Time)] INFO Errors: 649, accumulated errors: 5444, 100% of total requests
+[Thu Dec 17 2015 09:37:25 GMT-0500 (Eastern Standard Time)] INFO Requests: 6099 (61%), requests per second: 131, mean latency: 53620 ms
+[Thu Dec 17 2015 09:37:25 GMT-0500 (Eastern Standard Time)] INFO Errors: 655, accumulated errors: 6099, 100% of total requests
+[Thu Dec 17 2015 09:37:30 GMT-0500 (Eastern Standard Time)] INFO Requests: 6752 (68%), requests per second: 131, mean latency: 58430 ms
+[Thu Dec 17 2015 09:37:30 GMT-0500 (Eastern Standard Time)] INFO Errors: 653, accumulated errors: 6752, 100% of total requests
+[Thu Dec 17 2015 09:37:35 GMT-0500 (Eastern Standard Time)] INFO Requests: 7404 (74%), requests per second: 130, mean latency: 63290 ms
+[Thu Dec 17 2015 09:37:35 GMT-0500 (Eastern Standard Time)] INFO Errors: 652, accumulated errors: 7404, 100% of total requests
+[Thu Dec 17 2015 09:37:40 GMT-0500 (Eastern Standard Time)] INFO Requests: 8048 (80%), requests per second: 129, mean latency: 68100 ms
+[Thu Dec 17 2015 09:37:40 GMT-0500 (Eastern Standard Time)] INFO Errors: 644, accumulated errors: 8048, 100% of total requests
+[Thu Dec 17 2015 09:37:45 GMT-0500 (Eastern Standard Time)] INFO Requests: 8689 (87%), requests per second: 128, mean latency: 72950 ms
+[Thu Dec 17 2015 09:37:45 GMT-0500 (Eastern Standard Time)] INFO Errors: 641, accumulated errors: 8689, 100% of total requests
+[Thu Dec 17 2015 09:37:50 GMT-0500 (Eastern Standard Time)] INFO Requests: 9327 (93%), requests per second: 128, mean latency: 77790 ms
+[Thu Dec 17 2015 09:37:50 GMT-0500 (Eastern Standard Time)] INFO Errors: 638, accumulated errors: 9327, 100% of total requests
+[Thu Dec 17 2015 09:37:55 GMT-0500 (Eastern Standard Time)] INFO Requests: 9930 (99%), requests per second: 121, mean latency: 82650 ms
+[Thu Dec 17 2015 09:37:55 GMT-0500 (Eastern Standard Time)] INFO Errors: 603, accumulated errors: 9930, 100% of total requests
+[Thu Dec 17 2015 09:37:56 GMT-0500 (Eastern Standard Time)] INFO
+[Thu Dec 17 2015 09:37:56 GMT-0500 (Eastern Standard Time)] INFO Target URL:          http://localhost:3000/login
+[Thu Dec 17 2015 09:37:56 GMT-0500 (Eastern Standard Time)] INFO Max requests:        10000
+[Thu Dec 17 2015 09:37:56 GMT-0500 (Eastern Standard Time)] INFO Concurrency level:   10000
+[Thu Dec 17 2015 09:37:56 GMT-0500 (Eastern Standard Time)] INFO Agent:               none
+[Thu Dec 17 2015 09:37:56 GMT-0500 (Eastern Standard Time)] INFO
+[Thu Dec 17 2015 09:37:56 GMT-0500 (Eastern Standard Time)] INFO Completed requests:  10000
+[Thu Dec 17 2015 09:37:56 GMT-0500 (Eastern Standard Time)] INFO Total errors:        10000
+[Thu Dec 17 2015 09:37:56 GMT-0500 (Eastern Standard Time)] INFO Total time:          88.346524171 s
+[Thu Dec 17 2015 09:37:56 GMT-0500 (Eastern Standard Time)] INFO Requests per second: 113
+[Thu Dec 17 2015 09:37:56 GMT-0500 (Eastern Standard Time)] INFO Total time:          88.346524171 s
+[Thu Dec 17 2015 09:37:56 GMT-0500 (Eastern Standard Time)] INFO
+[Thu Dec 17 2015 09:37:56 GMT-0500 (Eastern Standard Time)] INFO Percentage of the requests served within a certain time
+[Thu Dec 17 2015 09:37:56 GMT-0500 (Eastern Standard Time)] INFO   50%      47923 ms
+[Thu Dec 17 2015 09:37:56 GMT-0500 (Eastern Standard Time)] INFO   90%      77727 ms
+[Thu Dec 17 2015 09:37:56 GMT-0500 (Eastern Standard Time)] INFO   95%      81569 ms
+[Thu Dec 17 2015 09:37:56 GMT-0500 (Eastern Standard Time)] INFO   99%      84786 ms
+[Thu Dec 17 2015 09:37:56 GMT-0500 (Eastern Standard Time)] INFO  100%      85552 ms (longest request)
+[Thu Dec 17 2015 09:37:56 GMT-0500 (Eastern Standard Time)] INFO
+[Thu Dec 17 2015 09:37:56 GMT-0500 (Eastern Standard Time)] INFO  100%      85552 ms (longest request)
+[Thu Dec 17 2015 09:37:56 GMT-0500 (Eastern Standard Time)] INFO
+[Thu Dec 17 2015 09:37:56 GMT-0500 (Eastern Standard Time)] INFO   302:   10000 errors

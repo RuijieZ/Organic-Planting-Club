@@ -1,0 +1,1 @@
+npm install & mocha & node bin/www

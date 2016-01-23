@@ -2,7 +2,7 @@
 
 /*scroll bar*/
 div.scroll1{
-  height: 600px;
+  height: 385px;
   background-color: whitesmoke;
   overflow: scroll;
   width: 50%;
@@ -259,19 +259,21 @@ h3 {
 /*note that on the button should change accordingly to the status of the task */
 
 .task-bottom-section {
-    padding-left:32%;
-    margin-bottom: 150px;
+    margin-top:-50px;
+    width: 100%;
+    padding-left:17%;
+    margin-bottom: 50px;
 }
 
-.task-bottom-section a {
-    margin-left: 13%;
+.linka {
+    margin-left: 0%;
     margin-bottom: 10px;
 }
 
 .task-accept-message {
     font-size:80%;
     color: green;
-    margin-left: 3.8%;
+    margin-left: 5%;
     margin-top:10px;
 }
 
@@ -295,9 +297,8 @@ h3 {
 
 .btn-full:hover,
 .btn-full:active{
-    text-decoration: none;
     background-color: #e67e22;
-    color:azure;
+    text-decoration-color: white;
 }
 
 
@@ -308,4 +309,10 @@ h3 {
     text-decoration: none;
     background-color: skyblue;
 
+}
+
+.task-title {
+    margin-left: 40%;
+    margin-top: 30px;
+    margin-bottom:30px;
 }

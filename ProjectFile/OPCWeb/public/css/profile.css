@@ -5,13 +5,14 @@ div.scroll1{
   height: 385px;
   background-color: whitesmoke;
   overflow: scroll;
-  width: 50%;
+  width: 45%;
   max-width: 500px;
-  margin-left:0;
+  margin-left:5.3%;
   padding: 0.2em;
   font: 100%/1.4 serif;
   border: 1px solid rgba(0,0,0,0.25);
   float: left;
+    
 }
 
 div.hidden {
@@ -22,9 +23,10 @@ div.hidden {
 }
 
 .panel-info {
-    width: 50%;
+    width: 40%;
     float:left;
     margin-left: 5%;
+    display:inline-block;
 }
 
 
@@ -223,16 +225,22 @@ header>h1 {
 
 
 
+/*task section*/
+.task {
+    padding-top: 3px;
+}
 
+.total {
+    background-image: url(../images/420838.jpg);
+    padding-bottom: 50px;
+}
 /*接受任务按钮*/
 
 /*note that on the button should change accordingly to the status of the task */
 
 .task-bottom-section {
-    margin-top:-50px;
     width: 100%;
-    padding-left:17%;
-    margin-bottom: 50px;
+    padding-left:20%;
 }
 
 .linka {
@@ -252,8 +260,8 @@ header>h1 {
     display: inline-block;
     padding: 10px 30px;
     font-weight: 300;
-    text-decoration: none;
     border-radius: 200px;
+    text-decoration-color: white;
     transition: background-color 0.2s, border 0.2s, color 0.2s;
 }
 
@@ -267,22 +275,55 @@ header>h1 {
 
 .btn-full:hover,
 .btn-full:active{
-    background-color: #e67e22;
-    text-decoration-color: white;
+  background: #f4d638;
+  transition: 0.5s all;
+  -webkit-transition: 0.5s all;
+  -moz-transition: 0.5s all;
+  -o-transition: 0.5s all;
 }
 
-
-
-
-.btn-full2:visited,
-.btn-full2:link{
-    text-decoration: none;
-    background-color: skyblue;
-
+.btn-full2:hover,
+.btn-full2:active{
+    border-color: deepskyblue;
+    border: 1px solid;
+    z-index: 10;
 }
 
 .task-title {
-    margin-left: 40%;
+    margin-left: 42%;
     margin-top: 30px;
     margin-bottom:30px;
 }
+
+/***************************/
+/***********animations*******/
+/***************************/
+
+.js--tasks {
+    opacity: 0;
+}
+
+.js--tasks.animated {
+    /*when animated class is present at the same time*/
+    /*waypoint script will add this class when scroll to that*/
+    opacity: 1;
+
+}
+
+.js--wp1 {
+    opacity: 0;
+}
+
+.js--wp1.animated {
+    opacity: 1;
+}
+
+.js--title {
+    opacity: 0;
+}
+
+.js--title.animated {
+    opacity: 1;
+}
+
+

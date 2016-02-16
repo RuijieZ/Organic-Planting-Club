@@ -82,21 +82,29 @@ h1>small {
 header {
   box-shadow: 1px 1px 4px rgba(0,0,0,0.5);
   margin:   30px auto 80px;
-  height:   300px;
+  height:   410px;
   position: relative;
-  width:    1142px;
+  width:    1000px;
 }
 
-.profile-banner {
+figure.profile-banner {
   left:     0;
   overflow: hidden;
   position: absolute;
   top:      0;
   z-index:  1;
+  background-size: cover;
 }
 
+figure.profile-banner img {
+    height: 325px;
+    width: 1000px;
+    overflow: hidden;
+}
+
+
+
 .profile-picture {
-  background-image: url(../images/moutain.jpg);
   background-position: center center;
   background-size: cover;
   border: 5px #efefef solid;
@@ -108,6 +116,14 @@ header {
   position: absolute;
   width: 148px;
   z-index: 3;
+}
+
+.profile-picture img {
+    border-radius: 50%;
+    height: 138px;
+    width: 138px;
+    left: 150px;
+    z-index: 5;
 }
 
 div.profile-stats {

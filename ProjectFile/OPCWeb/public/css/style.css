@@ -25,13 +25,16 @@ a:hover {
   -o-transition: 0.5s all;
 }
 /*--header start here--*/
+.header {
+    position: relative;
+}
 .head-left {
   float: left;
-  width: 33%;
+  width: 31%;
 }
 .header-right {
   float: right;
-  width: 67%;
+  width: 69%;
 }
 .head-left p {
   font-size: 1em;
@@ -55,7 +58,9 @@ span.menu {
   float:left
 } 
 .header-login {
-  float: right;
+  position:absolute;
+  top:1em;
+  right: 4.5em;
 }
 .regTip {
   font-size: 60%;
@@ -689,7 +694,7 @@ span.glyphicon.glyphicon-circle-arrow-right:hover {
   background: #956295;
   border: none;
   padding: 0.5em 1em 0.5em 1em;
-  margin: 0.6em 0em 0em 0em;
+  margin: 0px 0em 0em 0em;
 }
 .ftr-grd input[type="submit"]:hover {
   background: #f4d638;

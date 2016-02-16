@@ -59,200 +59,154 @@ h3 {
 
 
 
-/*content*/
-.user-profile {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url(../images/moutain.jpg);
-    background-size: cover;
-    background-position: center;
-    height: 300px;
+/***************************/
+/***********banner*********/
+/***************************/
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 100px;
 }
 
-.user-profile div {
-    margin-bottom: 15px;
+h1 {
+  display: block;
+  font-size: 50px;
+  margin: 25px auto 0;
+  width: 975px;
 }
 
-.user-profile h3{
-    color:#FFFFFF;
+h1>small {
+  color: #aaaaaa;
+  font-size: .5em;
 }
 
-.user-profile h2{
-    color:#FFFFFF;
+header {
+  box-shadow: 1px 1px 4px rgba(0,0,0,0.5);
+  margin:   30px auto 80px;
+  height:   300px;
+  position: relative;
+  width:    1142px;
 }
 
-.welcome {
-    padding-left: 12%;
-    position:center;
-    margin-top: 0px;
-    margin-bottom:50px;
-    width: 100%;
+.profile-banner {
+  left:     0;
+  overflow: hidden;
+  position: absolute;
+  top:      0;
+  z-index:  1;
 }
 
-
-
-.user-profile {
-    margin-top: 10px;
-    margin-bottom: 30px;
-    padding-left: 40%;
-    padding-top:70px;
-    padding-bottom: 185.4px;
+.profile-picture {
+  background-image: url(../images/moutain.jpg);
+  background-position: center center;
+  background-size: cover;
+  border: 5px #efefef solid;
+  border-radius: 50%;
+  bottom: -50px;
+  box-shadow: inset 1px 1px 3px rgba(0,0,0,0.2), 1px 1px 4px rgba(0,0,0,0.3);
+  height: 148px;
+  left: 150px;
+  position: absolute;
+  width: 148px;
+  z-index: 3;
 }
 
-.username {
-    display:inline;
-}
-
-.username-content {
-    display: inline;
-}
-
-.level {
-    display:inline;
-}
-
-.level-content {
-    display:inline;
-}
-
-.points {
-  display:inline;  
-}
-
-
-.points-content {
-    display: inline;
-}
-
-/*任务列表*/
-.task {
-    clear:both;
-    margin-left: 10%;
-    background-color: #f4f4f4;
-    margin-bottom: 350px;
-}
-
-.task ul {
-    margin-top:30px;
-    list-style: none;
-    padding-left: 0;
-}
-
-.task ul li{
-    margin-bottom: 5px;
-    text-decoration-color: #956295;
-}
-
-.task ul li i {
-    color:#e67e22;
-    font-size: 150%;
-    margin-right: 5px;
-}
-
-.task ul li a{
-    color:mediumpurple;
-    font-size: 130%;
-    margin-right: 5px;
-}
-
-.task-content h3:after {
-    display: block;
-    height: 2px;
-    background-color: #956295;
-    content: " ";
-    width: 120px;
-    margin-top: 30px;
-}
-
-.select-task {
-    margin-bottom: 120px;
-    margin-left: 10%;
-}
-
-.select-task textarea {
-    border: 1px solid #888;
-    display: block;
-}
-
-.task-detail {
-    margin-top :30px;
-    padding-left: 20%;
+div.profile-stats {
+  bottom: 0;
+  border-top: 1px solid rgba(0,0,0,0.5);
+  left: 0;
+  padding: 15px 15px 15px 350px;
+  position: absolute;
+  right: 0;
+  z-index: 2;
+  
+  /* Generated Gradient */
+  background: -moz-linear-gradient(top,  rgba(255,255,255,0.5) 0%, rgba(0,0,0,0.51) 3%, rgba(0,0,0,0.75) 61%, rgba(0,0,0,0.5) 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0.5)), color-stop(3%,rgba(0,0,0,0.51)), color-stop(61%,rgba(0,0,0,0.75)), color-stop(100%,rgba(0,0,0,0.5)));
+  background: -webkit-linear-gradient(top,  rgba(255,255,255,0.5) 0%,rgba(0,0,0,0.51) 3%,rgba(0,0,0,0.75) 61%,rgba(0,0,0,0.5) 100%);
+ background: -o-linear-gradient(top,  rgba(255,255,255,0.5) 0%,rgba(0,0,0,0.51) 3%,rgba(0,0,0,0.75) 61%,rgba(0,0,0,0.5) 100%);
+  background: -ms-linear-gradient(top,  rgba(255,255,255,0.5) 0%,rgba(0,0,0,0.51) 3%,rgba(0,0,0,0.75) 61%,rgba(0,0,0,0.5) 100%);
+  background: linear-gradient(to bottom,  rgba(255,255,255,0.5) 0%,rgba(0,0,0,0.51) 3%,rgba(0,0,0,0.75) 61%,rgba(0,0,0,0.5) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#80ffffff', endColorstr='#80000000',GradientType=0 );
 
 }
 
-.select-task-title {
-    display: inline;
-    width:10%;
-    float: left;
-}
-.select-task-title h4 {
-    padding-right: 30px;
-    font-size: 130%;
-    color:#956295;
-    align:center;
-    margin-bottom: 15px;
-    
+div.profile-stats ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
-.title2 {
-  margin-top:30px;   
+div.profile-stats ul li {
+  color: #efefef;
+  display: block;
+  float: left;
+  font-size: 24px;
+  font-weight: bold;
+  margin-right: 50px;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.7)
 }
 
-.title3 {
-    margin-top:30px;
+div.profile-stats li span {
+  display: block;
+  font-size: 16px;
+  font-weight: normal;
 }
 
-.title4 {
-    margin-top:35px;
+div.profile-stats a.follow {
+  display: block;
+  float: right;color: #ffffff;
+  margin-top: 5px;
+  text-decoration: none;
+  
+  /* This is a copy and paste from Bootstrap */
+  background-color: #49afcd;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background-color: #49afcd;
+  background-image: -moz-linear-gradient(top, #5bc0de, #2f96b4);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#5bc0de), to(#2f96b4));
+  background-image: -webkit-linear-gradient(top, #5bc0de, #2f96b4);
+  background-image: -o-linear-gradient(top, #5bc0de, #2f96b4);
+  background-image: linear-gradient(to bottom, #5bc0de, #2f96b4);
+  background-repeat: repeat-x;
+  border-color: #2f96b4 #2f96b4 #1f6377;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+
+  display: inline-block;
+  padding: 4px 12px;
+  margin-bottom: 0;
+  font-size: 14px;
+  line-height: 20px;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+  border-radius: 4px;
 }
 
-.task-detail {
-    display:inline; 
-    float: left;
-    width: 10%;
-    margin-left: -100px;
-    margin-top:-5px;
+div.profile-stats a.follow.followed {
+    /*From bootstrap*/
+  color: #ffffff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background-color: #5bb75b;
+  background-image: -moz-linear-gradient(top, #62c462, #51a351);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#62c462), to(#51a351));
+  background-image: -webkit-linear-gradient(top, #62c462, #51a351);
+  background-image: -o-linear-gradient(top, #62c462, #51a351);
+  background-image: linear-gradient(to bottom, #62c462, #51a351);
+  background-repeat: repeat-x;
+  border-color: #51a351 #51a351 #387038;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  
 }
 
-.task-detail textarea {
-    margin-bottom: 5px;
+header>h1 {
+  bottom: -50px;
+  color: #354B63;
+  font-size: 40px;
+  left: 350px;
+  position: absolute;
+  z-index: 5;
 }
 
-.description {
-    margin-left: 60%;
-}
 
-.description p {
-    margin-bottom: 30px;
-    color:green;
-    font-size:80%;
-}
 
-.guide-p2 {
-    margin-top:32px;
-}
-
-.guide-p3 {
-    margin-top: 34px;
-}
-.guide-p4 {
-    margin-top: 40px;
-}
-
-.select-task-tile {
-    padding-top: 150px;
-    margin-bottom: 60px;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/green%20grass.jpg);
-    background-size: cover;
-    background-position: center;
-    margin-bottom:50px;
-}
-
-.select-task-tile h3 {
-    text-align: center;
-    margin-left: -9%;
-    margin-top:-90px;
-    color:chartreuse;
-    float: inherit;   
-}
 
 /*接受任务按钮*/
 

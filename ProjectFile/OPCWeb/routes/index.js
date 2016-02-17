@@ -1,4 +1,4 @@
-﻿var express = require('express');
+var express = require('express');
 var router = express.Router();
 //var jquery = require("jquery");
 var auth = require('../javascripts/Oauth.js')
@@ -109,5 +109,14 @@ router.route("/contact")
         	}
         });
     }); 
+/*----------------------------------------------------*/
+/*  This main page is created for testing purposes
+    It will test the design layout of the field page
+    After testing is done, move this page to home or
+    Adding more user authentication code              */
+/*----------------------------------------------------*/
+router.get('/main', function(req, res) {
+    res.render('main', {title: "Main"});
+});
 
 module.exports = router;

@@ -17,6 +17,12 @@ $(document).ready(function() {
         offset:'60%'
     })
     
+     $('.js--wp-field').waypoint(function(direction) {
+        $('.js--wp-field').addClass('animated flipInX');
+    }, {
+        offset:'60%'
+    })
+    
     /*add animations to the button*/
     $( '.js--task-button1' ).hover(
       function() {

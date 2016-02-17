@@ -1,0 +1,58 @@
+/*-----------------------------------------*/
+/* Created for styling the main page       */
+/*-----------------------------------------*/
+
+.fields {
+    margin-left: 15%;
+    width:75%;
+    padding-left: 18%;
+    margin-top: -55px;
+}
+
+
+
+.icon {
+    padding-left: 0;
+    margin-left: 13%;
+    font-size: 300%;
+    display: inline;
+}
+
+.north {
+    display:inline;
+    margin-left: 1.2%;
+    font-size: 270%;
+}
+
+.icon2 {
+    font-size: 150%;
+    width: 300%;
+   
+}
+
+.icon3 {
+    font-size: 180%;
+    width: 300%;
+    display: inline;
+}
+
+.w {
+    display: inline;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.width {
+    margin-left: 3%;
+}
+
+/*-----------------------------------------*/
+/* Animation                               */
+/*-----------------------------------------*/
+.js--wp-field {
+    opacity: 0;
+}
+
+.js--wp-field.animated {
+    opacity: 1;
+}
